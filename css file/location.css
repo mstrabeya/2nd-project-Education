@@ -1,0 +1,56 @@
+body{
+	margin: 0;
+}
+.location{
+	background: mistyrose;
+	position: relative;
+	width: 100%;
+	height: 600px;
+	text-align: center;
+	padding-top: 20px;
+}
+.location h1{
+	font-size: 50px;
+	font-weight: bold;
+	margin: 0;
+}
+.footer{
+	position: absolute;
+	width: 75%;
+	height: 62%;
+	left: 15%;
+	top: 20%;
+	background: palevioletred ;
+	border-radius: 50px;
+	z-index: 0;
+}
+.content{
+	padding: 20px 0 0 200px;
+}
+.footer a{
+	background: white;
+	border-radius: 10px;
+	text-decoration: none;
+	color: black;
+	padding: 4px 4px 4px 0;
+}
+.footer a input{
+	background: palevioletred;
+	border: 1px solid white;
+	border-radius: 10px;
+	color: white;
+	padding: 4px 14px 4px 7px;
+	overflow: hidden;
+}
+.img{
+	position: absolute;
+	z-index: 1111;
+	top: 14%;
+}
+.img img{
+	width: 60%;
+	border-radius: 20px;
+}
+.footer input{
+	background: red;
+}

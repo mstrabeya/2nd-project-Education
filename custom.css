@@ -1,0 +1,124 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+img{
+	width: 100%;
+}
+/*--Menu start--*/
+.menu{
+	position: fixed;
+	height: 100%;
+	padding-top: 10%;
+	width: 10%;
+	background: black;
+}
+.menu ul{
+	list-style-type: none;
+	text-align: center;
+}
+.menu li{
+}
+.menu ul li a{
+	text-decoration: none;
+	color: red;
+	padding: 20px 0;
+	display: block;
+}
+hr{
+	margin: 0;
+}
+.menu li a:hover{
+	color: white;
+	background: red;
+}
+/*--Menu end--*/
+/*--Home-section start--*/
+.Home-section{
+	height: 640px;
+	background: url(images/pic.jpg);
+	background-size: 100% 100%;
+	text-align: center;
+	color: white;
+}
+.home-content p{
+	font-size: 45px;
+	margin: 0;
+	padding-top: 20%;
+	padding-left: 10%;
+}
+.home-content input{
+	font-size: 20px;
+	background: red;
+	margin-top: 30px;
+	padding: 6px;
+	font-weight: bold;
+	border: none;
+	border-radius: 6px;
+}
+.home-content input:hover{
+	background: white;
+	color: red;
+}
+/*--Home-section end--*/
+/*--Library-section start--*/
+.Library{
+	overflow: hidden;
+	text-align: center;
+	margin: 60px 0;
+}
+.library-content{
+	float: left;
+	padding-left: 20%;
+	padding-top: 9%;
+}
+.library-content h1{
+	font-size: 53px;
+	font-weight: bold;
+	margin: 0;
+}
+.library-content h1 span{
+	color: red;
+}
+.library-content p{
+	font-size: 20px;
+}
+.library-img{
+	float: right;
+	margin-right: 45px;
+}
+
+/*--Library-section end--*/
+/*--Book-section start--*/
+.Book-section{
+	text-align: center;
+	padding-left: 25px;
+}
+.Book-section h1{
+	font-size: 53px;
+	font-weight: bold;
+	margin: 0;
+}
+.Book-section h1 span{
+	color: black;
+	background: red;
+	border-radius: 17px;
+	padding: 0 8px;
+}
+.Book-section h1 span:hover{
+	color: white;
+	background: blue;
+	border-radius: 17px;
+	padding: 0 8px;
+}
+.Book-section p a{
+	color: red;
+}
+.Book-article{
+	text-align: center;
+}
+.Book-article img{
+	width: 50%;
+}
+/*--Book-section end--*/
+/*--Menu start--*/

@@ -19,20 +19,20 @@ body{
 	width: 75%;
 	height: 62%;
 	left: 15%;
-	top: 20%;
+	top: 30%;
 	background: palevioletred ;
 	border-radius: 50px;
 	z-index: 0;
 }
 .content{
-	padding: 20px 0 0 200px;
+	margin: 20px 0 0 200px;
 }
 .footer a{
 	background: white;
 	border-radius: 10px;
 	text-decoration: none;
 	color: black;
-	padding: 4px 4px 4px 0;
+	padding: 5px 5px 5px 0;
 }
 .footer a input{
 	background: palevioletred;
@@ -45,7 +45,7 @@ body{
 .img{
 	position: absolute;
 	z-index: 1111;
-	top: 14%;
+	top: 20%;
 }
 .img img{
 	width: 60%;
@@ -53,4 +53,23 @@ body{
 }
 .footer input{
 	background: red;
+}
+@media screen and (max-width: 670px) {
+	.content{
+		padding: 20px 0 0 20px;
+	}
+	.location h1{
+		font-size: 30px;
+		font-weight: bold;
+		margin: 0;
+	}
+	.img{
+		position: absolute;
+		z-index: 1111;
+		top: 10%;
+	}
+	.img img{
+		width: 50%;
+		padding-top: 25%;
+	}
 }

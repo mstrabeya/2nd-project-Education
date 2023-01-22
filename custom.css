@@ -6,20 +6,20 @@ img{
 	width: 100%;
 }
 /*--Menu start--*/
-.menu{
+.main-menu{
 	position: fixed;
 	height: 100%;
 	padding-top: 10%;
 	width: 10%;
 	background: black;
 }
-.menu ul{
+.main-menu ul{
 	list-style-type: none;
 	text-align: center;
 }
-.menu li{
+.main-menu li{
 }
-.menu ul li a{
+.main-menu ul li a{
 	text-decoration: none;
 	color: red;
 	padding: 20px 0;
@@ -28,11 +28,32 @@ img{
 hr{
 	margin: 0;
 }
-.menu li a:hover{
+.main-menu li a:hover{
 	color: white;
 	background: red;
 }
 /*--Menu end--*/
+.sub-menu{
+	display: none;
+	position: fixed;
+	height: 15%;
+	width: 100%;
+}
+label{
+	line-height: 80px;
+	font-size: 25px;
+	padding-left: 40px;
+}
+#check{
+	display: none;
+}
+.checkbtn{
+	display: none;
+	float: right;
+	line-height: 80px;
+	cursor: pointer;
+	color: aqua;
+}
 /*--Home-section start--*/
 .Home-section{
 	height: 640px;
@@ -47,10 +68,13 @@ hr{
 	padding-top: 20%;
 	padding-left: 10%;
 }
+.home-content p span{
+	font-size: 30px;
+}
 .home-content input{
 	font-size: 20px;
 	background: red;
-	margin-top: 30px;
+	margin: 30px 0px 0px 125px;
 	padding: 6px;
 	font-weight: bold;
 	border: none;
@@ -69,7 +93,7 @@ hr{
 }
 .library-content{
 	float: left;
-	padding-left: 20%;
+	padding-left: 15%;
 	padding-top: 9%;
 }
 .library-content h1{
@@ -85,7 +109,8 @@ hr{
 }
 .library-img{
 	float: right;
-	margin-right: 45px;
+	margin-right: 85px;
+	width: 450px;
 }
 
 /*--Library-section end--*/
@@ -106,8 +131,8 @@ hr{
 	padding: 0 8px;
 }
 .Book-section h1 span:hover{
-	color: white;
-	background: blue;
+	color: wheat;
+	background: black;
 	border-radius: 17px;
 	padding: 0 8px;
 }
@@ -122,3 +147,82 @@ hr{
 }
 /*--Book-section end--*/
 /*--Menu start--*/
+@media screen and (max-width: 670px){
+	/*-- main-menu*/
+	.main-menu{
+		display: none;
+	}
+	/*sub-menu*/
+	.sub-menu{
+		display: block;
+		background-color: red;
+	}
+	.checkbtn{
+		display: block;
+		margin-right: 30px;
+	}
+	.sub-menu ul{
+		position: fixed;
+		top: 56px;
+		left: -100%;
+		padding: 70px 0px;
+		transition: all 0.5s;
+		text-align: center;
+		height: 100vh;
+		width: 20%;
+		background: black;
+	}
+	.sub-menu ul li{
+		display: block;
+		color: white;
+	}
+	.sub-menu ul li a{
+		color: red;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: medium;
+		font-weight: bold;
+		padding-top: 25px;
+		display: inline-block;
+	}
+	.sub-menu a.active, .sub-menu a:hover{
+		color: whitesmoke;
+		background: transparent;
+	}
+	#check:checked ~ ul{
+		left: 0;
+	}
+	/*--home---*/
+	.Home-section{
+		height: 490px;
+	}
+	.home-content p{
+		font-size: 25px;
+		padding-left: 9%;
+		padding-top: 33%;
+	}
+	.home-content p span{
+		font-size: 20px;
+	}
+	.home-content input{
+		font-size: 20px;
+		margin: 30px 0px 0px 50px;
+	}
+	/*---libary--*/
+	.library-content{
+		padding-left: 5%;
+		padding-top: 0%;
+	}
+	.library-content h1{
+		font-size: 43px;
+	}
+	.library-content h1 span{
+		color: red;
+	}
+	.library-content p{
+		padding-bottom: 20px;
+	}
+	.library-img{
+		margin-right: 88px;
+	}
+}
